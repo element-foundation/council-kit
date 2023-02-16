@@ -8,6 +8,7 @@ module.exports = (phase) => {
   // Development Config
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     return {
+      redirects,
       reactStrictMode: true,
     };
   }
@@ -15,6 +16,7 @@ module.exports = (phase) => {
   // Production Config
   return {
     reactStrictMode: true,
+    redirects,
 
     // The default Next 13 minifier has a bug which makes react-tooltip not work
     // in production environments. Turn this off. See:
@@ -29,3 +31,13 @@ module.exports = (phase) => {
     },
   };
 };
+
+async function redirects() {
+  return [
+    {
+      source: "/",
+      destination: "/proposals",
+      permanent: true,
+    },
+  ];
+}
