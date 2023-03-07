@@ -8,7 +8,7 @@ import { councilConfigs } from "src/config/council.config";
 import { wagmiConfig } from "src/lib/rainbowKit";
 import { reactQueryClient } from "src/lib/reactQuery";
 import { makeTOSAndPrivacyPolicyToast } from "src/ui/base/toast/makeTOSAndPrivacyPolicyToast";
-import { useLocalStorage } from "src/ui/base/useLocalStorage";
+import { getLocalStorage } from "src/ui/base/getLocalStorage";
 import { Navigation } from "src/ui/navigation/Navigation";
 import { WagmiProvider } from "wagmi";
 
@@ -71,7 +71,8 @@ function App({ Component, pageProps }: AppProps): ReactElement {
 
 export default App;
 function useToastTOSAndPrivacyPolicy() {
-  const { setItem, getItem } = useLocalStorage();
+  const { setItem, getItem } = getLocalStorage();
+
   useEffect(() => {
     if (!getItem("approve-tos-and-privacy-policy")) {
       makeTOSAndPrivacyPolicyToast({
