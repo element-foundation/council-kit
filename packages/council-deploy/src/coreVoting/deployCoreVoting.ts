@@ -1,5 +1,5 @@
 import { CoreVoting__factory } from "@council/typechain";
-import { Wallet } from "ethers";
+import { Signer } from "ethers";
 import { parseEther } from "ethers/lib/utils";
 import {
   ContractWithDeploymentArgs,
@@ -7,7 +7,7 @@ import {
 } from "src/base/contractFactory";
 
 interface DeployCoreVotingOptions {
-  signer: Wallet;
+  signer: Signer;
   votingVaultAddresses: string[];
   timelockAddress: string;
   baseQuorum: string;
@@ -44,6 +44,7 @@ export async function deployCoreVoting({
 }: DeployCoreVotingOptions): Promise<
   ContractWithDeploymentArgs<CoreVoting__factory>
 > {
+  console.log("Deploying CoreVoting...");
   const coreVotingFactory = new CoreVoting__factory(signer);
   const deploymentArgs: DeployArguments<CoreVoting__factory> = [
     await signer.getAddress(),
@@ -54,7 +55,7 @@ export async function deployCoreVoting({
   ];
   const coreVoting = await coreVotingFactory.deploy(...deploymentArgs);
   await coreVoting.deployTransaction.wait(1);
-  console.log("Deployed CoreVoting");
+  console.log(`Deployed CoreVoting @ ${coreVoting.address}`);
 
   (await coreVoting.setLockDuration(lockDuration)).wait(1);
   (await coreVoting.changeExtraVotingTime(extraVotingTime)).wait(1);
