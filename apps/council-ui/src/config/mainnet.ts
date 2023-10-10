@@ -155,7 +155,6 @@ export const mainnetCouncilConfig: CouncilConfig = {
       },
     },
   },
-
   gscVoting: {
     name: "GSC",
     address: "0x40309f197e7f94B555904DF0f788a3F48cF326aB",
