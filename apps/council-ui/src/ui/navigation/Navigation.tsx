@@ -5,11 +5,11 @@ import { useRouter } from "next/router";
 import { ReactElement } from "react";
 import { makeVoterURL, Routes } from "src/routes";
 import { useClaimableAirdropAmount } from "src/ui/airdrop/hooks/useClaimableAirdropAmount";
+import { makeImgSrc } from "src/ui/base/imgSrc";
 import { AirdropIcon } from "src/ui/base/svg/20/AirdropIcon";
 import PushIcon from "src/ui/base/svg/PushLogo";
-import { Tooltip } from "src/ui/base/Tooltip/Tooltip";
-import { makeImgSrc } from "src/ui/base/imgSrc";
-import { useWrongNetworkEffect } from "src/ui/network/useWrongNetworkEffect";
+import { Tooltip } from "src/ui/base/Tooltip";
+import { useWrongNetworkEffect } from "src/ui/network/hooks/useWrongNetworkEffect";
 import { usePushSubscribe } from "src/ui/push/usePushSubscribe";
 import { useAccount } from "wagmi";
 
