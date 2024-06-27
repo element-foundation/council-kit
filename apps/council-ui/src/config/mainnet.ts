@@ -215,6 +215,13 @@ export const mainnetCouncilConfig: CouncilConfig = {
         paragraphSummary:
           "The main treasury  holds approx. 192,000 USDC in assets wound up in Yearn positions. These assets come from affiliate fees via Yearn. A separate proposal manages the unwinding of the GSC treasury, which contains about 60,000 USDC. Following this proposal, two more will be necessary to unwind CRV positions and to consolidate assets into USDC, DAI, and ETH.",
       },
+      18: {
+        targets: [],
+        calldatas: [],
+        title: "Hyperdrive Mainnet Launch & Security Monitoring and Incident Management",
+        sentenceSummary: "EGP-30 proposes that the Element DAO engages DELV as a service provider to deploy an instance of Hyperdrive (and Hyperdrive pools) on Ethereum Mainnet, to add stETH and sDAI yield sources, and to support/monitor the security of the deployed Hyperdrive instances over a 90-day duration.",
+        paragraphSummary: "This proposal includes details for the following service provision milestones:\n  1. Deployment of an Element DAO instance of the Hyperdrive protocol and 6-month pool deployments for stETH and sDAI to Ethereum Mainnet.\n  2. For 90 days, security monitoring and incident management of the Element DAO instance of the Hyperdrive protocol and responding to potential security issues.",
+      },
     },
   },
   gscVoting: {
