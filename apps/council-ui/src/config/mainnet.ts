@@ -225,7 +225,7 @@ export const mainnetCouncilConfig: CouncilConfig = {
       19: {
         targets: [],
         calldatas: [],
-        title: "EGP-31: Foundation Update and ELFI Request",
+        title: "EGP-32: DELV Payment for Milestone 1 of EGP-30",
         sentenceSummary:
           "EGP-32 proposes the details for the Element DAO paying DELV as a service provider for Milestone 1 of EPG-30.",
         paragraphSummary:
@@ -321,7 +321,7 @@ export const mainnetCouncilConfig: CouncilConfig = {
           "https://docs.google.com/document/d/17tR4ZjibQyfAma3QfklA0FTA4n6S3lGEXXWMzT75K-k/edit",
         targets: [],
         calldatas: [],
-        title: "EGP-32: DELV Payment for Milestone 1 of EGP-30",
+        title: "EGP-16: GSC-5",
         sentenceSummary:
           "Revised proposal to unwind the GSC treasury, transferring the unwound assets to the main treasury.",
         paragraphSummary:
