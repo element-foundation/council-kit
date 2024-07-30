@@ -222,6 +222,15 @@ export const mainnetCouncilConfig: CouncilConfig = {
         paragraphSummary:
           "This proposal is being submitted by the HyperVue Foundation (Formerly Element Foundation), a Cayman Islands entity created alongside the launch of the Element DAO in 2021 to aid and support the decisions proposed and made by stakeholders and owners of the Element protocol (ELFI holders & community members).\n\n As we begin a new chapter in line with the mainnet deployment of the Hyperdrive, the next version of the Element Protocol, the Foundation gears towards assisting the DAO and protocol to reach their full potential.",
       },
+      19: {
+        targets: [],
+        calldatas: [],
+        title: "EGP-31: Foundation Update and ELFI Request",
+        sentenceSummary:
+          "EGP-32 proposes the details for the Element DAO paying DELV as a service provider for Milestone 1 of EPG-30.",
+        paragraphSummary:
+          "This proposal includes the payment details for the following service provisions as described in Milestone 1: The Deployment of Element DAO Instance of Hyperdrive (and Pools) to Ethereum Mainnet - DELV developed, deployed, and launched an Element DAO instance of Hyperdrive with 6-month pools on top of stETH and sDAI on Ethereum Mainnet.",
+      },
     },
   },
   gscVoting: {
