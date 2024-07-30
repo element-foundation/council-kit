@@ -321,7 +321,7 @@ export const mainnetCouncilConfig: CouncilConfig = {
           "https://docs.google.com/document/d/17tR4ZjibQyfAma3QfklA0FTA4n6S3lGEXXWMzT75K-k/edit",
         targets: [],
         calldatas: [],
-        title: "EGP-16: GSC-5",
+        title: "EGP-32: DELV Payment for Milestone 1 of EGP-30",
         sentenceSummary:
           "Revised proposal to unwind the GSC treasury, transferring the unwound assets to the main treasury.",
         paragraphSummary:
