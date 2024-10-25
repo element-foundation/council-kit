@@ -231,6 +231,15 @@ export const mainnetCouncilConfig: CouncilConfig = {
         paragraphSummary:
           "This proposal includes the payment details for the following service provisions as described in Milestone 1: The Deployment of Element DAO Instance of Hyperdrive (and Pools) to Ethereum Mainnet - DELV developed, deployed, and launched an Element DAO instance of Hyperdrive with 6-month pools on top of stETH and sDAI on Ethereum Mainnet.",
       },
+      20: {
+        targets: [],
+        calldatas: [],
+        title: "EGP-33: On-Chain and Snapshot Quorum Raise Proposal",
+        sentenceSummary:
+          "This proposal is to raise the On-Chain and Snapshot quorum from 1.1m voting power to 2.77m voting power.",
+        paragraphSummary:
+          "For any proposal to have validated results through the governance process, whether it is a Social or Protocol proposal, it needs to meet quorum. When Element DAO launched two years ago the default quorum was set at 1.1m voting power with an initial ratio between quorum and float (circulating supply) of 9%.\n\n This proposal addresses the change in voting power delegation since the launch of the DAO. Since there is more circulating and delegated ELFI due to vested and vesting DELV team members and investors there is a need to raise quorum.",
+      },
     },
   },
   gscVoting: {
