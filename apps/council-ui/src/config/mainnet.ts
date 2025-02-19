@@ -249,6 +249,16 @@ export const mainnetCouncilConfig: CouncilConfig = {
         paragraphSummary:
           "https://commonwealth.im/element-finance/discussion/25059",
       },
+      22: {
+        targets: [],
+        calldatas: [],
+        title:
+          "EGP-37: Payment Proposal for Yield Sources Onboarding & Deployment to Other Chains and L2s (for EGP-34)",
+        sentenceSummary:
+          "EGP-37 proposes the details for the Element DAO paying DELV as a service provider for the 90 days of yield source onboarding and deployments to other chains and L2s performed pursuant to EGP-34.",
+        paragraphSummary:
+          "As mentioned in the ratified EGP-34 proposal, DELV is submitting an onchain proposal to the Element DAO for the completed EGP-34 Services, per the following. (1) Deployer Coordinator Pricing: 100,000 ELFI per deployer coordinator. This pricing reflects DELV's efforts in deploying the relevant yield source or chain / L2 (factory deployments). The Element DAO is not charged for DELV's research, identification, or selection. This means DELV gets paid only for completed deployments under the EGP34 Services. (2) Payment Schedule: At the end of the Service Term, DELV will submit a final onchain payment proposal and will continue services for the remainder of the Service Term if approved and executed. Read more: https://forum.element.fi/discussion/25920",
+      },
     },
   },
   gscVoting: {
